@@ -1,0 +1,17 @@
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Python (untuk server statis lokal)
+__pycache__/
+*.pyc
+
+# Log & temp
+*.log
+*.tmp

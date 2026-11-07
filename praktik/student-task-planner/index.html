@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Student Task Planner</h1>
+    <p class="subtitle">Penanda tugas kuliah — dibuat sebagai praktik Workshop Day 1.</p>
+
+    <form id="task-form" autocomplete="off">
+      <input id="task-title" type="text" placeholder="Judul tugas, mis. Laporan Praktikum" required>
+      <input id="task-due" type="date" required>
+      <button type="submit">Tambah</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Filter tugas">
+      <button class="filter is-active" data-filter="all">Semua <span id="count-all"></span></button>
+      <button class="filter" data-filter="pending">Belum selesai <span id="count-pending"></span></button>
+      <button class="filter" data-filter="completed">Selesai <span id="count-completed"></span></button>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-state" class="empty-state" hidden>Tidak ada tugas pada filter ini.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
